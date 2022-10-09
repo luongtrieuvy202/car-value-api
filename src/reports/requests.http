@@ -1,0 +1,28 @@
+POST http://localhost:3000/reports
+content-type: application/json
+
+
+{
+    "make":"sdfsd",
+    "model":"sdfsdf",
+    "year":2000,
+    "mileage":20000,
+    "lng":0,
+    "lat":0,
+    "price":200
+}
+
+
+###
+PATCH  http://localhost:3000/reports/7
+content-type : application/json
+
+{
+    "approved":true
+}
+
+
+###
+
+GET http://localhost:3000/reports?make=toyota&model=corolla&lng=0&lat=0&mileage=11&year=2000
+content-type: application/json
